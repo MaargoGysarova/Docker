@@ -20,7 +20,6 @@ def get_db_connection():
 def index():
     return jsonify({"message": "Work!"})
 
-
 @app.route('/db')
 def db_test():
     conn = None

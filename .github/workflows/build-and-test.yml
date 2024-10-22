@@ -13,7 +13,7 @@ on:
 jobs:
   build:
     #среда для выполнения
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       # Шаг 1: Проверка исходного кода
