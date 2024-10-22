@@ -13,6 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      # Установка Docker Buildx (необходим для сборки образов)
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
       # Логин в Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
